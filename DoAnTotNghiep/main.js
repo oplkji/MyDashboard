@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3000");
+const socket = io("http://192.168.30.11:3000");
 
 socket.on("init-data", (data) => {
   if (data.node1) updateNode1(data.node1);
