@@ -1,4 +1,4 @@
-const socket = io("https://myserver-y5n6.onrender.com");
+const socket = io("https://myserver-xcxt.onrender.com");
 
 socket.on("init-data", (data) => {
   if (data.node1) updateNode1(data.node1);
