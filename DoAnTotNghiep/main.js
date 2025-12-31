@@ -61,5 +61,7 @@ function formatDateTime(iso) {
   // const ss = String(date.getSeconds()).padStart(2, "0");
 
   // return `${d}/${m}/${y} ${hh}:${mm}:${ss}`;
-  return new Date(iso).toLocaleString("vi-VN");
+  const [date, time] = str.split(" ");
+  const [y, m, d] = date.split("-");
+  return `${d}/${m}/${y} ${time.split(".")[0]}`;
 }
