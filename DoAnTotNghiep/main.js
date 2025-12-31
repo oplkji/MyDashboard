@@ -50,15 +50,16 @@ function updateNode2(data) {
 }
 
 function formatDateTime(iso) {
-  const date = new Date(iso);
+  // const date = new Date(iso);
 
-  const d = String(date.getDate()).padStart(2, "0");
-  const m = String(date.getMonth() + 1).padStart(2, "0");
-  const y = date.getFullYear();
+  // const d = String(date.getDate()).padStart(2, "0");
+  // const m = String(date.getMonth() + 1).padStart(2, "0");
+  // const y = date.getFullYear();
 
-  const hh = String(date.getHours()).padStart(2, "0");
-  const mm = String(date.getMinutes()).padStart(2, "0");
-  const ss = String(date.getSeconds()).padStart(2, "0");
+  // const hh = String(date.getHours()).padStart(2, "0");
+  // const mm = String(date.getMinutes()).padStart(2, "0");
+  // const ss = String(date.getSeconds()).padStart(2, "0");
 
-  return `${d}/${m}/${y} ${hh}:${mm}:${ss}`;
+  // return `${d}/${m}/${y} ${hh}:${mm}:${ss}`;
+  return new Date(iso).toLocaleString("vi-VN");
 }
